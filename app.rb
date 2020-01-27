@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
   
   post '/checkout' do
-     @item = Puppy.new(params[:name])
+     @item = Item.new(params[:name])
     erb :
   end 
 end
